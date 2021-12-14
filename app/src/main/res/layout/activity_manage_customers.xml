@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManageCustomersActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Online Store Management System"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/my_blue"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/my_dark_grey"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer List"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="left"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#E91E63"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#959595"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="20dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/customersList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+</ScrollView>
